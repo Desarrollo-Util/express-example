@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from "express";
 import accountRouter from "./routes/account.js";
+import authRouter from "./routes/auth.js";
 
 dotenv.config();
 
@@ -10,10 +11,7 @@ const expressApp = express();
 expressApp.use(express.json());
 expressApp.use(express.text());
 expressApp.use("/account", accountRouter);
-
-expressApp.get("/raiz", (req, res) => {
-  res.send();
-});
+expressApp.use("/auth", authRouter);
 
 expressApp.listen(PORT, () =>
   console.log(`Servidor levantado en el puerto ${PORT}`)
