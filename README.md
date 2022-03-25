@@ -1,3 +1,6 @@
-# Node + Express - Middleware and Router Example
+# Node and Express Example
 
-Ejemplo de código del video de Youtube: https://www.youtube.com/watch?v=j5UBvJhLA-k
+Videos relacionados:
+
+- Express + Router: https://www.youtube.com/watch?v=j5UBvJhLA-k
+- Autenticación y autorización: https://www.youtube.com/watch?v=rjZnvDlZfmk
