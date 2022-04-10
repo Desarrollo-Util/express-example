@@ -4,6 +4,7 @@ import express from "express";
 import accountRouter from "./routes/account.js";
 import authRouter from "./routes/auth.js";
 import authSessionRouter from "./routes/auth_session.js";
+import authTokenRouter from "./routes/auth_token.js";
 
 dotenv.config();
 
@@ -18,7 +19,7 @@ expressApp.use("/account", accountRouter);
 
 expressApp.use("/auth", authRouter);
 
-//expressApp.use("/auth-token", authTokenRouter);
+expressApp.use("/auth-token", authTokenRouter);
 expressApp.use("/auth-session", authSessionRouter);
 
 expressApp.listen(PORT, () =>
