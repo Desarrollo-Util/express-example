@@ -28,7 +28,7 @@ const LoginDTOSchema = Type.Object(
 
 const ajv = new Ajv({ allErrors: true });
 
-addFormats(ajv, ["email"]).addKeyword("kind").addKeyword("modifier");
+addFormats(ajv, ["email"]);
 addErrors(ajv, { keepErrors: false });
 const validate = ajv.compile(LoginDTOSchema);
 
